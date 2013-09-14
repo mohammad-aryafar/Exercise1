@@ -11,7 +11,7 @@ class Employee
    public:
       Employee(int id, char* name);
       ~Employee();
-      void setBoss(Manager* newBoss);
+      void setBoss(const Manager& newBoss);
       void work(int numOfHours);
       void report();
       int getHours();
